@@ -1,0 +1,37 @@
+{
+  "resourceType" : "Patient",
+  "id" : "HivPatientExample",
+  "meta" : {
+    "profile" : ["http://openhie.org/fhir/botswana-training/StructureDefinition/hiv-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>first name middle name Smith (OFFICIAL)</b> male, DoB Unknown ( id:\u00a0ORG1-0765712)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Id:</td><td colspan=\"3\">id:\u00a0Omang ID is split into two.</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "http://openhie.org/fhir/botswana-training/identifier/mrn",
+    "value" : "ORG1-0765712"
+  },
+  {
+    "extension" : [{
+      "extension" : [{
+        "url" : "http://openhie.org/fhir/botswana-training/StructureDefinition/standard-omang-id",
+        "valueString" : "ABC-123-333-1A"
+      },
+      {
+        "url" : "http://openhie.org/fhir/botswana-training/StructureDefinition/generated-omang-id",
+        "valueString" : "Richard-Langford-40-M"
+      }],
+      "url" : "http://openhie.org/fhir/botswana-training/StructureDefinition/omang-id"
+    }],
+    "system" : "http://openhie.org/fhir/botswana-training/identifier/omang-id",
+    "value" : "Omang ID is split into two."
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Smith",
+    "given" : ["first name",
+    "middle name"]
+  }],
+  "gender" : "male"
+}

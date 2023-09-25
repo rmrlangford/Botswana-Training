@@ -1,0 +1,16 @@
+﻿/github/workspace/fsh-generated/resources/ImplementationGuide-openhie.fhir.botswana-training.json: line 1, col 928, Info - Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0 (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-generated-omang-id.json: line 1, col 961, Info - Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0 (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient.json: line 1, col 801, Info - Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0 (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient.json: line 1, col 24528, Warning - Rule eld-24: 'pattern[x] should be used rather than fixed[x]' Failed (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation) (INVARIANT)
+/github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient.json: line 1, col 35645, Warning - Rule eld-24: 'pattern[x] should be used rather than fixed[x]' Failed (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation) (INVARIANT)
+/github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient.json: line 1, col 95600, Warning - Rule eld-24: 'pattern[x] should be used rather than fixed[x]' Failed (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation) (INVARIANT)
+/github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient.json: line 1, col 95978, Warning - Rule eld-24: 'pattern[x] should be used rather than fixed[x]' Failed (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation) (INVARIANT)
+/github/workspace/fsh-generated/resources/StructureDefinition-omang-id.json: line 1, col 904, Info - Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0 (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-standard-omang-id.json: line 1, col 942, Info - Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0 (BUSINESSRULE)
+
+BotswanaTrainingIG : Validation Results
+=========================================
+
+err = 0, warn = 4, info = 5
+IG Publisher Version: 1.4.8
+Generated Sun Sep 24 11:43:51 UTC 2023. FHIR version 5.0.0 for openhie.fhir.botswana-training#1.0.0 (canonical = http://openhie.org/fhir/botswana-training)

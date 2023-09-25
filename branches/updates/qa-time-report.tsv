@@ -1,0 +1,10 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-openhie.fhir.botswana-training.json	3995	-	0	0	0	0	0	0	6	83	0	0	0	0	0	0	0	2	0	0	74	60	0	0	1	4	0	0
+fsh-generated/resources/StructureDefinition-standard-omang-id.json	1540	16	0	0	0	0	0	27	0	41	0	0	1	0	0	0	0	0	0	0	32	1851	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-omang-id.json	2122	13	0	0	0	0	0	60	0	29	0	0	0	0	0	0	0	0	0	0	37	332	0	0	0	1	0	0
+fsh-generated/resources/Patient-HivPatientExample.json	8820	29	0	0	0	0	0	0	0	170	0	0	0	0	0	0	0	0	0	0	35	32	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-value.json	1480	13	0	0	0	0	0	25	0	16	0	0	0	0	0	0	0	0	0	0	23	171	0	0	0	1	0	1
+fsh-generated/resources/StructureDefinition-parent.json	2231	19	0	0	0	0	0	34	0	26	0	0	0	0	0	0	0	1	0	0	39	304	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-hiv-patient.json	13784	106	1	0	0	0	0	453	0	396	0	0	2	0	0	0	0	3	0	0	795	2518	0	0	0	27	0	2
+fsh-generated/resources/StructureDefinition-url.json	1461	20	0	0	0	0	0	13	0	16	0	0	1	0	0	0	0	1	0	0	25	86	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-generated-omang-id.json	1572	16	0	0	0	0	0	13	0	14	0	0	0	0	0	0	0	0	0	0	22	75	0	0	0	1	0	0

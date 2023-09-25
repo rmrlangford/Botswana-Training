@@ -1,0 +1,30 @@
+﻿BotswanaTrainingIG : Validation Results
+=========================================
+
+err = 0, warn = 4, info = 5
+IG Publisher Version: 1.4.8
+Generated Sun Sep 24 11:43:51 UTC 2023. FHIR version 5.0.0 for openhie.fhir.botswana-training#1.0.0 (canonical = http://openhie.org/fhir/botswana-training)
+ Build Errors : 0 / 0 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-openhie.fhir.botswana-training : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Patient-HivPatientExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-generated-omang-id : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 4 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-omang-id : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-standard-omang-id : 0 / 0 / 2
+</table>
+== n/a ==
+== fsh-generated/resources/ImplementationGuide-openhie.fhir.botswana-training.json ==
+INFORMATION: ImplementationGuide/openhie.fhir.botswana-training: ImplementationGuide.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/Patient-HivPatientExample.json ==
+== fsh-generated/resources/StructureDefinition-generated-omang-id.json ==
+INFORMATION: StructureDefinition/generated-omang-id: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-hiv-patient.json ==
+INFORMATION: StructureDefinition/hiv-patient: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/hiv-patient: StructureDefinition.snapshot.element[16]: Rule eld-24: 'pattern[x] should be used rather than fixed[x]' Failed (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/hiv-patient: StructureDefinition.snapshot.element[25]: Rule eld-24: 'pattern[x] should be used rather than fixed[x]' Failed (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/hiv-patient: StructureDefinition.differential.element[5]: Rule eld-24: 'pattern[x] should be used rather than fixed[x]' Failed (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/hiv-patient: StructureDefinition.differential.element[8]: Rule eld-24: 'pattern[x] should be used rather than fixed[x]' Failed (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+== fsh-generated/resources/StructureDefinition-omang-id.json ==
+INFORMATION: StructureDefinition/omang-id: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-standard-omang-id.json ==
+INFORMATION: StructureDefinition/standard-omang-id: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0

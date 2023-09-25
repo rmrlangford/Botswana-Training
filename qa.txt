@@ -1,0 +1,35 @@
+﻿BotswanaTrainingIG : Validation Results
+=========================================
+
+err = 0, warn = 0, info = 8
+IG Publisher Version: 1.4.8
+Generated Mon Sep 25 19:05:07 UTC 2023. FHIR version 5.0.0 for openhie.fhir.botswana-training#1.0.0 (canonical = http://openhie.org/fhir/botswana-training)
+ Build Errors : 0 / 0 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-openhie.fhir.botswana-training : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Patient-HivPatientExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-generated-omang-id : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-omang-id : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-parent : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-standard-omang-id : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-url : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-value : 0 / 0 / 2
+</table>
+== n/a ==
+== fsh-generated/resources/ImplementationGuide-openhie.fhir.botswana-training.json ==
+INFORMATION: ImplementationGuide/openhie.fhir.botswana-training: ImplementationGuide.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/Patient-HivPatientExample.json ==
+== fsh-generated/resources/StructureDefinition-generated-omang-id.json ==
+INFORMATION: StructureDefinition/generated-omang-id: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-hiv-patient.json ==
+INFORMATION: StructureDefinition/hiv-patient: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-omang-id.json ==
+INFORMATION: StructureDefinition/omang-id: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-parent.json ==
+INFORMATION: StructureDefinition/parent: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-standard-omang-id.json ==
+INFORMATION: StructureDefinition/standard-omang-id: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-url.json ==
+INFORMATION: StructureDefinition/url: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/StructureDefinition-value.json ==
+INFORMATION: StructureDefinition/value: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0

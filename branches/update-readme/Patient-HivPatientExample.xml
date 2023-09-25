@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="HivPatientExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/botswana-training/StructureDefinition/hiv-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>first name middle name Smith (OFFICIAL)</b> male, DoB Unknown ( id: ORG1-0765712)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Id:</td><td colspan="3">id: Omang ID is split into two.</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://openhie.org/fhir/botswana-training/identifier/mrn"/>
+    <value value="ORG1-0765712"/>
+  </identifier>
+  <identifier>
+    <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/omang-id">
+      <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/standard-omang-id">
+        <valueString value="ABC-123-333-1A"/>
+      </extension>
+      <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/generated-omang-id">
+        <valueString value="Richard-Langford-40-M"/>
+      </extension>
+    </extension>
+    <system value="http://openhie.org/fhir/botswana-training/identifier/omang-id"/>
+    <value value="Omang ID is split into two."/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <family value="Smith"/>
+    <given value="first name"/>
+    <given value="middle name"/>
+  </name>
+  <gender value="male"/>
+</Patient>

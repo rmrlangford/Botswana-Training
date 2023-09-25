@@ -1,0 +1,6 @@
+{
+  "version" : "1.0.0",
+  "fhirVersion" : ["5.0.0"],
+  "date" : "20230925190355",
+  "name" : "openhie.fhir.botswana-training"
+}

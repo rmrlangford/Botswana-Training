@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="HivPatientExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/botswana-training/StructureDefinition/hiv-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Mike John Smith (OFFICIAL)</b> male, DoB: 1983-05-22 ( Patient folder number: MRN ID can be issued by many different systems.)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Known Marital status of Patient">Marital Status:</td><td colspan="3"><span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">Married</span></td></tr><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Ids:</td><td colspan="3"><ul><li>id: Biometric ID can be issued by many different systems.</li><li>id: Omang ID is split into two.</li><li>Passport number: A patient can have multiple passport IDs.</li><li>id: refugee-id</li><li>id: birth-cert-id</li><li>id: A patient can have multiple residence IDs.</li><li>id: foreign-id</li><li>id: drivers-id</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li><a href="tel:+27829999999">+27829999999</a></li><li><a href="mailto:someone@something.com">someone@something.com</a></li><li><a href="mailto:someone2@something.com">someone2@something.com</a></li><li>15 street name Broadhurst Gaborone Botswana </li><li>44 street name 2 Phakalane Gaborone Botswana </li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Nominated Contact: Next-of-Kin">Next-of-Kin:</td><td colspan="3"><ul><li>John Jack Doe </li><li><a href="tel:+27829999999">+27829999999</a></li><li><a href="mailto:someone@something.com">someone@something.com</a></li><li><a href="mailto:someone2@something.com">someone2@something.com</a></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="The nationality of the patient.">Patient Nationality:</td><td colspan="3"><ul><li>code: <span title="Codes: {urn:iso:std:iso:3166 BWA}">Nationality</span></li><li>period: 1983-05-22 --&gt; (ongoing)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="The patient's legal status as citizen of a country.">Patient Citizenship:</td><td colspan="3"><ul><li>code: <span title="Codes: {urn:iso:std:iso:3166 BWA}">Citizenship</span></li><li>period: 1983-05-22 --&gt; (ongoing)</li></ul></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-nationality">
+    <extension url="code">
+      <valueCodeableConcept>
+        <coding>
+          <system value="urn:iso:std:iso:3166"/>
+          <code value="BWA"/>
+          <display value="Botswana"/>
+        </coding>
+        <text value="Nationality"/>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="period">
+      <valuePeriod>
+        <start value="1983-05-22"/>
+      </valuePeriod>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-citizenship">
+    <extension url="code">
+      <valueCodeableConcept>
+        <coding>
+          <system value="urn:iso:std:iso:3166"/>
+          <code value="BWA"/>
+          <display value="Botswana"/>
+        </coding>
+        <text value="Citizenship"/>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="period">
+      <valuePeriod>
+        <start value="1983-05-22"/>
+      </valuePeriod>
+    </extension>
+  </extension>
+  <identifier>
+    <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/parent">
+      <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/value">
+        <valueString value="MRN-SYSTEM-1"/>
+      </extension>
+      <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/url">
+        <valueUri value="http://openhie.org/fhir/botswana-training/identifier/mrn-for-system-1"/>
+      </extension>
+    </extension>
+    <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/parent">
+      <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/value">
+        <valueString value="MRN-SYSTEM-2"/>
+      </extension>
+      <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/url">
+        <valueUri value="http://openhie.org/fhir/botswana-training/identifier/mrn-for-system-2"/>
+      </extension>
+    </extension>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MR"/>
+        <display value="Medical record number"/>
+      </coding>
+      <text value="Patient folder number"/>
+    </type>
+    <system value="http://openhie.org/fhir/botswana-training/identifier/mrn"/>
+    <value value="MRN ID can be issued by many different systems."/>
+  </identifier>
+  <identifier>
+    <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/parent">
+      <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/value">
+        <valueString value="Biometric-SYSTEM-1"/>
+      </extension>
+      <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/url">
+        <valueUri value="http://openhie.org/fhir/botswana-training/identifier/biometric-for-system-1"/>
+      </extension>
+    </extension>
+    <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/parent">
+      <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/value">
+        <valueString value="Biometric-SYSTEM-2"/>
+      </extension>
+      <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/url">
+        <valueUri value="http://openhie.org/fhir/botswana-training/identifier/biometric-for-system-2"/>
+      </extension>
+    </extension>
+    <system value="http://openhie.org/fhir/botswana-training/identifier/biometric"/>
+    <value value="Biometric ID can be issued by many different systems."/>
+  </identifier>
+  <identifier>
+    <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/omang-id">
+      <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/standard-omang-id">
+        <valueString value="ABC-123-333-1A"/>
+      </extension>
+      <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/generated-omang-id">
+        <valueString value="Richard-Langford-40-M"/>
+      </extension>
+    </extension>
+    <system value="http://openhie.org/fhir/botswana-training/identifier/omang"/>
+    <value value="Omang ID is split into two."/>
+  </identifier>
+  <identifier>
+    <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/parent">
+      <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/value">
+        <valueString value="Passport-1"/>
+      </extension>
+    </extension>
+    <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/parent">
+      <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/value">
+        <valueString value="Passport-2"/>
+      </extension>
+    </extension>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PPN"/>
+        <display value="Passport number"/>
+      </coding>
+      <text value="Passport number"/>
+    </type>
+    <system value="http://openhie.org/fhir/botswana-training/identifier/passport"/>
+    <value value="A patient can have multiple passport IDs."/>
+  </identifier>
+  <identifier>
+    <system value="http://openhie.org/fhir/botswana-training/identifier/refugee"/>
+    <value value="refugee-id"/>
+  </identifier>
+  <identifier>
+    <system value="http://openhie.org/fhir/botswana-training/identifier/birth-certificate"/>
+    <value value="birth-cert-id"/>
+  </identifier>
+  <identifier>
+    <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/parent">
+      <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/value">
+        <valueString value="Residence-1"/>
+      </extension>
+    </extension>
+    <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/parent">
+      <extension url="http://openhie.org/fhir/botswana-training/StructureDefinition/value">
+        <valueString value="Residence-2"/>
+      </extension>
+    </extension>
+    <system value="http://openhie.org/fhir/botswana-training/identifier/residence"/>
+    <value value="A patient can have multiple residence IDs."/>
+  </identifier>
+  <identifier>
+    <system value="http://openhie.org/fhir/botswana-training/identifier/foreign"/>
+    <value value="foreign-id"/>
+  </identifier>
+  <identifier>
+    <system value="http://openhie.org/fhir/botswana-training/identifier/drivers"/>
+    <value value="drivers-id"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <family value="Smith"/>
+    <given value="Mike"/>
+    <given value="John"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+27829999999"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="someone@something.com"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="someone2@something.com"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1983-05-22"/>
+  <address>
+    <type value="postal"/>
+    <line value="15"/>
+    <line value="street name"/>
+    <line value="Broadhurst"/>
+    <city value="Gaborone"/>
+    <district value="Ramotswa"/>
+    <country value="Botswana"/>
+  </address>
+  <address>
+    <type value="postal"/>
+    <line value="44"/>
+    <line value="street name 2"/>
+    <line value="Phakalane"/>
+    <city value="Gaborone"/>
+    <district value="Ramotswa"/>
+    <country value="Botswana"/>
+  </address>
+  <maritalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+      <code value="M"/>
+    </coding>
+  </maritalStatus>
+  <contact>
+    <relationship>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+        <code value="N"/>
+      </coding>
+    </relationship>
+    <name>
+      <family value="Doe"/>
+      <given value="John"/>
+      <given value="Jack"/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="+27829999999"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="someone@something.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="someone2@something.com"/>
+    </telecom>
+  </contact>
+</Patient>

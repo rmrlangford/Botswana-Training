@@ -1,0 +1,240 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/botswana-training/Patient/HivPatientExample> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HivPatientExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/hiv-patient"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/botswana-training/StructureDefinition/hiv-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Mike John Smith (OFFICIAL)</b> male, DoB: 1983-05-22 ( Patient folder number: MRN ID can be issued by many different systems.)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li>id: Biometric ID can be issued by many different systems.</li><li>id: Omang ID is split into two.</li><li>Passport number: A patient can have multiple passport IDs.</li><li>id: refugee-id</li><li>id: birth-cert-id</li><li>id: A patient can have multiple residence IDs.</li><li>id: foreign-id</li><li>id: drivers-id</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li><a href=\"tel:+27829999999\">+27829999999</a></li><li><a href=\"mailto:someone@something.com\">someone@something.com</a></li><li><a href=\"mailto:someone2@something.com\">someone2@something.com</a></li><li>15 street name Broadhurst Gaborone Botswana </li><li>44 street name 2 Phakalane Gaborone Botswana </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Next-of-Kin\">Next-of-Kin:</td><td colspan=\"3\"><ul><li>John Jack Doe </li><li><a href=\"tel:+27829999999\">+27829999999</a></li><li><a href=\"mailto:someone@something.com\">someone@something.com</a></li><li><a href=\"mailto:someone2@something.com\">someone2@something.com</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The nationality of the patient.\">Patient Nationality:</td><td colspan=\"3\"><ul><li>code: <span title=\"Codes: {urn:iso:std:iso:3166 BWA}\">Nationality</span></li><li>period: 1983-05-22 --&gt; (ongoing)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The patient's legal status as citizen of a country.\">Patient Citizenship:</td><td colspan=\"3\"><ul><li>code: <span title=\"Codes: {urn:iso:std:iso:3166 BWA}\">Citizenship</span></li><li>period: 1983-05-22 --&gt; (ongoing)</li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "BWA" ] ;
+           fhir:display [ fhir:v "Botswana" ]
+         ] ) ;
+         fhir:text [ fhir:v "Nationality" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "period"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Period ;
+         fhir:start [ fhir:v "1983-05-22"^^xsd:date ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-nationality"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "BWA" ] ;
+           fhir:display [ fhir:v "Botswana" ]
+         ] ) ;
+         fhir:text [ fhir:v "Citizenship" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "period"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Period ;
+         fhir:start [ fhir:v "1983-05-22"^^xsd:date ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-citizenship"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MRN-SYSTEM-1" ]
+       ] [
+         fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/url"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://openhie.org/fhir/botswana-training/identifier/mrn-for-system-1"^^xsd:anyURI ]
+       ] ) ;
+       fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/parent"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MRN-SYSTEM-2" ]
+       ] [
+         fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/url"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://openhie.org/fhir/botswana-training/identifier/mrn-for-system-2"^^xsd:anyURI ]
+       ] ) ;
+       fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/parent"^^xsd:anyURI ]
+     ] ) ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ] ;
+         fhir:display [ fhir:v "Medical record number" ]
+       ] ) ;
+       fhir:text [ fhir:v "Patient folder number" ]
+     ] ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/botswana-training/identifier/mrn"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "MRN ID can be issued by many different systems." ]
+  ] [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Biometric-SYSTEM-1" ]
+       ] [
+         fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/url"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://openhie.org/fhir/botswana-training/identifier/biometric-for-system-1"^^xsd:anyURI ]
+       ] ) ;
+       fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/parent"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Biometric-SYSTEM-2" ]
+       ] [
+         fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/url"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://openhie.org/fhir/botswana-training/identifier/biometric-for-system-2"^^xsd:anyURI ]
+       ] ) ;
+       fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/parent"^^xsd:anyURI ]
+     ] ) ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/botswana-training/identifier/biometric"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Biometric ID can be issued by many different systems." ]
+  ] [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/standard-omang-id"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ABC-123-333-1A" ]
+       ] [
+         fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/generated-omang-id"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Richard-Langford-40-M" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/omang-id"^^xsd:anyURI ]
+     ] ) ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/botswana-training/identifier/omang"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Omang ID is split into two." ]
+  ] [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Passport-1" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/parent"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Passport-2" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/parent"^^xsd:anyURI ]
+     ] ) ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PPN" ] ;
+         fhir:display [ fhir:v "Passport number" ]
+       ] ) ;
+       fhir:text [ fhir:v "Passport number" ]
+     ] ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/botswana-training/identifier/passport"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "A patient can have multiple passport IDs." ]
+  ] [
+     fhir:system [ fhir:v "http://openhie.org/fhir/botswana-training/identifier/refugee"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "refugee-id" ]
+  ] [
+     fhir:system [ fhir:v "http://openhie.org/fhir/botswana-training/identifier/birth-certificate"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "birth-cert-id" ]
+  ] [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Residence-1" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/parent"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Residence-2" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/parent"^^xsd:anyURI ]
+     ] ) ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/botswana-training/identifier/residence"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "A patient can have multiple residence IDs." ]
+  ] [
+     fhir:system [ fhir:v "http://openhie.org/fhir/botswana-training/identifier/foreign"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "foreign-id" ]
+  ] [
+     fhir:system [ fhir:v "http://openhie.org/fhir/botswana-training/identifier/drivers"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "drivers-id" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Smith" ] ;
+     fhir:given ( [ fhir:v "Mike" ] [ fhir:v "John" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+27829999999" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "someone@something.com" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "someone2@something.com" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1983-05-22"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:type [ fhir:v "postal" ] ;
+     fhir:line ( [ fhir:v "15" ] [ fhir:v "street name" ] [ fhir:v "Broadhurst" ] ) ;
+     fhir:city [ fhir:v "Gaborone" ] ;
+     fhir:district [ fhir:v "Ramotswa" ] ;
+     fhir:country [ fhir:v "Botswana" ]
+  ] [
+     fhir:type [ fhir:v "postal" ] ;
+     fhir:line ( [ fhir:v "44" ] [ fhir:v "street name 2" ] [ fhir:v "Phakalane" ] ) ;
+     fhir:city [ fhir:v "Gaborone" ] ;
+     fhir:district [ fhir:v "Ramotswa" ] ;
+     fhir:country [ fhir:v "Botswana" ]
+  ] ) ; # 
+  fhir:maritalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "M" ]
+     ] )
+  ] ; # 
+  fhir:contact ( [
+     fhir:relationship ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0131"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N" ]
+       ] )
+     ] ) ;
+     fhir:name [
+       fhir:family [ fhir:v "Doe" ] ;
+       fhir:given ( [ fhir:v "John" ] [ fhir:v "Jack" ] )
+     ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "+27829999999" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "someone@something.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "someone2@something.com" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

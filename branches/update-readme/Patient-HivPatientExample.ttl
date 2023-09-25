@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/botswana-training/Patient/HivPatientExample> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HivPatientExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/hiv-patient"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/botswana-training/StructureDefinition/hiv-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>first name middle name Smith (OFFICIAL)</b> male, DoB Unknown ( id: ORG1-0765712)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Id:</td><td colspan=\"3\">id: Omang ID is split into two.</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://openhie.org/fhir/botswana-training/identifier/mrn"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "ORG1-0765712" ]
+  ] [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/standard-omang-id"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ABC-123-333-1A" ]
+       ] [
+         fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/generated-omang-id"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Richard-Langford-40-M" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://openhie.org/fhir/botswana-training/StructureDefinition/omang-id"^^xsd:anyURI ]
+     ] ) ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/botswana-training/identifier/omang-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Omang ID is split into two." ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Smith" ] ;
+     fhir:given ( [ fhir:v "first name" ] [ fhir:v "middle name" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] . # 
+
+# -------------------------------------------------------------------------------------
+

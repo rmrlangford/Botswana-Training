@@ -1,0 +1,15 @@
+﻿/github/workspace/fsh-generated/resources/ImplementationGuide-openhie.fhir.botswana-training.json: line 1, col 928, Info - Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0 (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-generated-omang-id.json: line 1, col 961, Info - Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0 (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient.json: line 1, col 801, Info - Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0 (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-omang-id.json: line 1, col 904, Info - Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0 (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-parent.json: line 1, col 925, Info - Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0 (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-standard-omang-id.json: line 1, col 942, Info - Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0 (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-url.json: line 1, col 892, Info - Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0 (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-value.json: line 1, col 902, Info - Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0 (BUSINESSRULE)
+
+BotswanaTrainingIG : Validation Results
+=========================================
+
+err = 0, warn = 0, info = 8
+IG Publisher Version: 1.4.8
+Generated Mon Sep 25 19:05:07 UTC 2023. FHIR version 5.0.0 for openhie.fhir.botswana-training#1.0.0 (canonical = http://openhie.org/fhir/botswana-training)
