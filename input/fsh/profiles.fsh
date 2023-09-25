@@ -23,12 +23,12 @@ Description: "An HIV patient getting services"
 * identifier[OmangID].extension contains OmangIDParent named OID 1..1
 * identifier[OmangID].value 1..1
 * identifier[OmangID].value = "Omang ID is split into two."
-* identifier[OmangID].system = "http://openhie.org/fhir/botswana-training/identifier/omang" (exactly)
+* identifier[OmangID].system = "http://openhie.org/fhir/botswana-training/identifier/omang"
 
 * identifier[MRN].value 1..1
 * identifier[MRN].extension contains IDParent named MRNID 1..*
 * identifier[MRN].value = "MRN ID can be issued by many different systems."
-* identifier[MRN].system = "http://openhie.org/fhir/botswana-training/identifier/mrn" (exactly)
+* identifier[MRN].system = "http://openhie.org/fhir/botswana-training/identifier/mrn"
 * identifier[MRN].type.coding.code = #MR
 * identifier[MRN].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[MRN].type.coding.display = "Medical record number"
@@ -37,33 +37,33 @@ Description: "An HIV patient getting services"
 * identifier[PPN].value 1..1
 * identifier[PPN].extension contains IDParent named PASSID 1..*
 * identifier[PPN].value = "A patient can have multiple passport IDs."
-* identifier[PPN].system = "http://openhie.org/fhir/botswana-training/identifier/passport" (exactly)
+* identifier[PPN].system = "http://openhie.org/fhir/botswana-training/identifier/passport"
 * identifier[PPN].type.coding.code = #PPN
 * identifier[PPN].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[PPN].type.coding.display = "Passport number"
 * identifier[PPN].type.text = "Passport number"
 
 * identifier[RefugeeID].value 1..1
-* identifier[RefugeeID].system = "http://openhie.org/fhir/botswana-training/identifier/refugee" (exactly)
+* identifier[RefugeeID].system = "http://openhie.org/fhir/botswana-training/identifier/refugee"
 
 * identifier[BirthCertificateID].value 1..1
-* identifier[BirthCertificateID].system = "http://openhie.org/fhir/botswana-training/identifier/birth-certificate" (exactly)
+* identifier[BirthCertificateID].system = "http://openhie.org/fhir/botswana-training/identifier/birth-certificate"
 
 * identifier[Biometric].value 1..1
 * identifier[Biometric].extension contains IDParent named BiometricID 1..*
 * identifier[Biometric].value = "Biometric ID can be issued by many different systems."
-* identifier[Biometric].system = "http://openhie.org/fhir/botswana-training/identifier/biometric" (exactly)
+* identifier[Biometric].system = "http://openhie.org/fhir/botswana-training/identifier/biometric"
 
 * identifier[Residence].value 1..1
 * identifier[Residence].extension contains IDParent named ResidenceID 1..*
 * identifier[Residence].value = "A patient can have multiple residence IDs."
-* identifier[Residence].system = "http://openhie.org/fhir/botswana-training/identifier/residence" (exactly)
+* identifier[Residence].system = "http://openhie.org/fhir/botswana-training/identifier/residence"
 
 * identifier[Foreign].value 1..1
-* identifier[Foreign].system = "http://openhie.org/fhir/botswana-training/identifier/foreign" (exactly)
+* identifier[Foreign].system = "http://openhie.org/fhir/botswana-training/identifier/foreign"
 
 * identifier[Drivers].value 1..1
-* identifier[Drivers].system = "http://openhie.org/fhir/botswana-training/identifier/drivers" (exactly)
+* identifier[Drivers].system = "http://openhie.org/fhir/botswana-training/identifier/drivers"
 
 * name.use 1..1
 * name.given 1..*
